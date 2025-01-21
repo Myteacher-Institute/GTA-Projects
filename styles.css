@@ -11,6 +11,7 @@ body {
     place-items: center;
 }
 
+/* Expanding Cards Start */
 .card-container {
     gap: 10px;
     display: flex;
@@ -49,3 +50,4 @@ body {
 .card-img.active span {
     display: inline-block;
 }
+/* Expanding Cards Stop */
