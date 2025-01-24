@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: grid;
+    height: 100dvh;
+    place-items: center;
+}
+.card-container{
+    gap: 10px;
+    display: flex;
+
+}
+.card-container .card-img{
+    width: 40px;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: width .5s;
+
+}
+.card-container .card-img.active{
+    width: 340px;
+
+}
+.card-img img{
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.card-img span{
+    display: none;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    inset: auto auto 10px 10px;
+}
+
+.card-img.active span{
+    display: block;
+}
