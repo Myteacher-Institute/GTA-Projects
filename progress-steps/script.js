@@ -1,9 +1,8 @@
+let currentStep = 1;
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const line = document.querySelector('.line');
 const circles = document.querySelectorAll('.circle');
-
-let currentStep = 1;
 
 const update = () => {
     circles.forEach((circle, index) => {
